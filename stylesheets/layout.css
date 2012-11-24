@@ -19,6 +19,24 @@
 
 /* #Page Styles
 ================================================== */
+.wireframe {
+    background-color: lightgray;
+    height: 240px;
+    text-align: center;
+}
+
+.wireframe .wireframe {
+    background-color: gray;
+    height: 50%;
+}
+
+.location {
+    height: 400px;
+}
+
+footer.wireframe {
+    height: 100px;
+}
 
 /* #Media Queries
 ================================================== */
