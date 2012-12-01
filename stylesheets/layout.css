@@ -136,7 +136,7 @@ footer {
 ================================================== */
 
 div#call-to-action-detail { display: none; }
-
+div#call-to-action-detail div.cta-detail-content { display: none; }
 
 
 
