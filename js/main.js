@@ -1,6 +1,6 @@
 $(window).load(function() {
     var selected = undefined;
-    $("div#calls-to-action a").bind("click",function(){
+    $("div#call-to-action a").bind("click",function(){
         if ($(this).attr("href")==selected) {
              $("div#call-to-action-detail").slideToggle();
         } else {

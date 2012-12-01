@@ -12,7 +12,7 @@ body {
   background: #F9F9F9;
 }
 
-
+strong { font-weight: 600; color: inherit; }
 
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -22,6 +22,28 @@ p {
 }
 
 h1, h2, h3, h4, h5 { font-family: 'Open Sans', sans-serif; font-weight: 400; }
+
+h2 { 
+	color: #6D6F71; 
+	font-size: 1.8333em; /* 22px */
+  line-height: 1.6364em; /* 36px */
+  margin: 0;
+  font-weight: 600;
+}
+h3 {
+	color: #37AFE3;
+	font-weight: 600;
+	font-size: 1.1667em; /* 14px */
+  line-height: 1.2857em; /* 18px */
+  margin: 0;
+}
+h4 {
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #8D7765;
+	font-weight: 400;
+  margin: 0;
+}
 
 /* 34px - The quick brown fox jumps over the lazy dog */
 .class-for-34px {
@@ -68,9 +90,11 @@ h1, h2, h3, h4, h5 { font-family: 'Open Sans', sans-serif; font-weight: 400; }
 
 .no-margin { margin: 0 !important; }
 
+
+
 div.divider {
 	border-top: 1px solid #E5E5E5;
-	margin: 2.5em 0;
+	margin: 3em 0 2em 0;
 	height: 0px;
 }
 div.divider hr {
@@ -88,22 +112,23 @@ div.divider hr {
 	border: 1px solid #E1E1E1;
 	padding: 0.5em;
 	box-shadow: 0px 0px 0.4166666667em #DDD;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
 }
 .bordered_box .inner {
 	padding: 0.8333333333em;
 	background-color: #F3F3F1;
 	position: relative;
 }
-.bordered_box .inner h3 {
-	margin: -0.8333333333em -0.8333333333em 0.8333333333em -0.8333333333em;
-}
 
 
 /* header & footer */
 header { 
 	background: transparent url('../images/header_bg.jpg') no-repeat top center;
-	min-height: 51em; /* 612px; */
 	padding-top: 4.1666666667em;
+	padding-bottom: 2em;
+	height: auto;
 	color: #FFF;
 }
 header #branding-contact h1 { color: transparent; }
@@ -121,7 +146,28 @@ header #branding-contact nav ul li {
 header #branding-contact nav ul li:last-child { border-right: none; }
 header #branding-contact nav ul li a { color: #FFF; }
 
+header #welcome { margin-top: 14em; margin-bottom: 0; }
+header #welcome h2 { margin: 0; float: right; font-size: 1.8333em; font-weight: 600; color: #FFF; }
+header #welcome h4 { margin: 3em 0 0.5em 0; font-size: 1em; text-transform: uppercase; font-weight: 600; color: #FFF; }
+header #welcome * { color: #FFF; }
 
+header #mission-statement { background: transparent url('../images/mission_statement_bg.png') no-repeat top center; padding-top: 2em; margin: 0.25em 0 0 0; }
+header #mission-statement div.mission-statement-content { padding: 0 1.6666666667em; }
+header #mission-statement h4 { 
+	font-size: 2.8333em; /* 34px */
+  line-height: 1em; /* 36px */
+  font-weight: 200;
+  color: #FFF;
+  text-transform: uppercase;
+  margin: 0 0 0.25em 0;
+}
+header #mission-statement h4 strong { display: block; font-weight: 600; }
+header #mission-statement p { font-size: 1.0833em; /* 13px */  line-height: 1.3846em; /* 18px */ margin: 0; }
+
+/* main content */
+div#main { margin: 4em 0; }
+
+/* footer styles */
 footer { 
 	background: transparent url('../images/footer_bg.jpg') no-repeat top center;
 	padding: 2em 0 6em 0;
@@ -129,16 +175,33 @@ footer {
 
 
 
-
-
-
 /* #Page Styles
 ================================================== */
 
-div#call-to-action-detail { display: none; }
-div#call-to-action-detail div.cta-detail-content { display: none; }
+div#call-to-action a { display: block; padding: 4px; background-color: #EBEAE6; }
+div#call-to-action a img { max-width: 100%; display: block; }
+
+div#call-to-action-detail { display: none; background-color: #E9E9E9; }
+div#call-to-action-detail div.container { position: relative; }
+div#call-to-action-detail div.container img.cta_arrow { position: absolute; top: -1.25em; left: 0.8333333333em; }
+div#call-to-action-detail div.cta-detail-content { display: none; padding: 1em 0; }
 
 
+div.location h3 {
+	margin: 0 0 1em -1.25em;
+	display: inline-block;
+	width: auto;
+	color: #FFF;
+	text-transform: uppercase;
+	background: transparent url('../images/location_title_bg.png') top right;
+	line-height: 1.5714285714em; /* 22px */
+	padding: 0 2em 0 1.25em;
+}
+div.location h4 { font-weight: 600; margin: 1em 0 0.5em 0; }
+div.location img { max-width: 100%; display: block; margin: 0 0 1em 0; }
+
+div#our-staff h4 { margin-bottom: 0.5em; }
+div#our-staff img { float: left; margin: 0 1em 1em 0; display: block; }
 
 
 
