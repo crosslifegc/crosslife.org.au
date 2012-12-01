@@ -103,7 +103,24 @@ div.divider hr {
 header { 
 	background: transparent url('../images/header_bg.jpg') no-repeat top center;
 	min-height: 51em; /* 612px; */
+	padding-top: 4.1666666667em;
+	color: #FFF;
 }
+header #branding-contact h1 { color: transparent; }
+header #branding-contact p.contact-info { text-align: right; margin: 0; font-size: 1.0833em; /* 13px */ line-height: 1.3846em; /* 18px */ }
+header #branding-contact nav { margin-top: 2em; }
+header #branding-contact nav ul { text-align: right; }
+header #branding-contact nav ul li { 
+	font-size: 1.0833em; /* 13px */ 
+	line-height: 1em; /* 18px */ 
+	display: inline-block; 
+	color: #FFF; 
+	padding: 0 1em; 
+	border-right: 1px solid #FFF; 
+}
+header #branding-contact nav ul li:last-child { border-right: none; }
+header #branding-contact nav ul li a { color: #FFF; }
+
 
 footer { 
 	background: transparent url('../images/footer_bg.jpg') no-repeat top center;
@@ -112,23 +129,17 @@ footer {
 
 
 
+
+
+
 /* #Page Styles
 ================================================== */
 
+div#call-to-action-detail { display: none; }
 
 
 
 
-.wireframe {
-  background-color: lightgray;
-}
-.wireframe .wireframe {
-  background-color: gray;
-}
-.location {
-}
-footer.wireframe {
-}
 
 
 /* #Media Queries
