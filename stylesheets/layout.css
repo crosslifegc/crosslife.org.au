@@ -14,29 +14,106 @@
 	#Media Queries
 	#Font-Face */
 
+
+
+
+
 /* #Site Styles
 ================================================== */
 
+body {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #716F6D;
+  background: #F9F9F9;
+}
+
+.no-margin { margin: 0 !important; }
+
+p {
+	font-family: 'Open Sans', sans-serif;
+  font-size: 1em; /* 12px */
+  line-height: 1.5em; /* 18px */
+  margin: 0 0 1.5em 0;
+}
+
+h1, h2, h3, h4, h5 { font-family: 'Open Sans', sans-serif; font-weight: 400; }
+
+/* 34px - The quick brown fox jumps over the lazy dog */
+.class-for-34px {
+  font-size: 2.8333em; /* 34px */
+  line-height: 1.0588em; /* 36px */
+  margin-top: 0.5294em;
+  margin-bottom: 0em;
+}
+/* 26px - The quick brown fox jumps over the lazy dog */
+.class-for-26px {
+  font-size: 2.1667em; /* 26px */
+  line-height: 1.3846em; /* 36px */
+  margin-top: 0.6923em;
+  margin-bottom: 0em;
+}
+/* 22px - The quick brown fox jumps over the lazy dog */
+.class-for-22px {
+  font-size: 1.8333em; /* 22px */
+  line-height: 1.6364em; /* 36px */
+  margin-top: 0.8182em;
+  margin-bottom: 0em;
+}
+/* 14px - The quick brown fox jumps over the lazy dog */
+.class-for-14px {
+  font-size: 1.1667em; /* 14px */
+  line-height: 1.2857em; /* 18px */
+  margin-top: 1.2857em;
+  margin-bottom: 0em;
+}
+/* 13px - The quick brown fox jumps over the lazy dog */
+.class-for-13px {
+  font-size: 1.0833em; /* 13px */
+  line-height: 1.3846em; /* 18px */
+  margin-top: 1.3846em;
+  margin-bottom: 0em;
+}
+/* 12px - The quick brown fox jumps over the lazy dog */
+.class-for-12px {
+  font-size: 1em; /* 12px */
+  line-height: 1.5em; /* 18px */
+  margin-top: 1.5em;
+  margin-bottom: 0em;
+}
+
+
+header { 
+	background: transparent url('../images/header_bg.jpg') no-repeat top center;
+	min-height: 51em; /* 612px; */
+}
+
+footer { 
+	background: transparent url('../images/footer_bg.jpg') no-repeat top center;
+	padding: 3em 0;
+	min-height: 40em;
+}
+
+
 /* #Page Styles
 ================================================== */
+
+
+
+
+
 .wireframe {
-    background-color: lightgray;
-    height: 240px;
-    text-align: center;
+  background-color: lightgray;
 }
-
 .wireframe .wireframe {
-    background-color: gray;
-    height: 50%;
+  background-color: gray;
 }
-
 .location {
-    height: 400px;
+}
+footer.wireframe {
 }
 
-footer.wireframe {
-    height: 100px;
-}
 
 /* #Media Queries
 ================================================== */
@@ -57,12 +134,17 @@ footer.wireframe {
 	@media only screen and (max-width: 479px) {}
 
 
+
+
 /* #Font-Face
 ================================================== */
 /* 	This is the proper syntax for an @font-face file
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
 		comment brackets */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700);
+
 
 /*	@font-face {
 	    font-family: 'FontName';
