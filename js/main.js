@@ -1,4 +1,6 @@
 $(window).load(function() {
+
+    // binding call to action clicking
     var selected = undefined;
     $("div#call-to-action a").bind("click",function(){
         if ($(this).attr("href")==selected) {
@@ -16,4 +18,15 @@ $(window).load(function() {
         }
         return false;
     });
+   
+    // top nav
+    $("div#branding-contact nav a").bind('click', function(){
+        var theId = $(this).attr('href');
+        var theScrollTop = ($(theId).offset().top) - 10;
+        $('html,body').animate({ scrollTop: theScrollTop }, 'normal');
+        return false;
+    });
+
+    // scroll to top
+    $("body").UItoTop({ easingType: 'easeOutQuart' });
 });

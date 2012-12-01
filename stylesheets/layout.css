@@ -94,7 +94,7 @@ h4 {
 
 div.divider {
 	border-top: 1px solid #E5E5E5;
-	margin: 3em 0 2em 0;
+	margin: 4em 0 3em 0;
 	height: 0px;
 }
 div.divider hr {
@@ -144,7 +144,7 @@ header #branding-contact nav ul li {
 	border-right: 1px solid #FFF; 
 }
 header #branding-contact nav ul li:last-child { border-right: none; }
-header #branding-contact nav ul li a { color: #FFF; }
+header #branding-contact nav ul li a { color: #FFF; font-weight: 600; text-decoration: none; }
 
 header #welcome { margin-top: 14em; margin-bottom: 0; }
 header #welcome h2 { margin: 0; float: right; font-size: 1.8333em; font-weight: 600; color: #FFF; }
