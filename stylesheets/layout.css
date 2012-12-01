@@ -1,22 +1,5 @@
 /*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
 */
-
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
-
-
-
-
 
 /* #Site Styles
 ================================================== */
@@ -29,7 +12,7 @@ body {
   background: #F9F9F9;
 }
 
-.no-margin { margin: 0 !important; }
+
 
 p {
 	font-family: 'Open Sans', sans-serif;
@@ -83,6 +66,40 @@ h1, h2, h3, h4, h5 { font-family: 'Open Sans', sans-serif; font-weight: 400; }
   margin-bottom: 0em;
 }
 
+.no-margin { margin: 0 !important; }
+
+div.divider {
+	border-top: 1px solid #E5E5E5;
+	margin: 2.5em 0;
+	height: 0px;
+}
+div.divider hr {
+	display: none;
+}
+
+.full_width {
+	display: block;
+	max-width: 100%;
+}
+
+
+/* bordered */
+.bordered_box {
+	border: 1px solid #E1E1E1;
+	padding: 0.5em;
+	box-shadow: 0px 0px 0.4166666667em #DDD;
+}
+.bordered_box .inner {
+	padding: 0.8333333333em;
+	background-color: #F3F3F1;
+	position: relative;
+}
+.bordered_box .inner h3 {
+	margin: -0.8333333333em -0.8333333333em 0.8333333333em -0.8333333333em;
+}
+
+
+
 
 header { 
 	background: transparent url('../images/header_bg.jpg') no-repeat top center;
@@ -94,6 +111,7 @@ footer {
 	padding: 3em 0;
 	min-height: 40em;
 }
+
 
 
 /* #Page Styles
