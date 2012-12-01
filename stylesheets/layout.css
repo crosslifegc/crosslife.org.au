@@ -99,8 +99,7 @@ div.divider hr {
 }
 
 
-
-
+/* header & footer */
 header { 
 	background: transparent url('../images/header_bg.jpg') no-repeat top center;
 	min-height: 51em; /* 612px; */
@@ -108,8 +107,7 @@ header {
 
 footer { 
 	background: transparent url('../images/footer_bg.jpg') no-repeat top center;
-	padding: 3em 0;
-	min-height: 40em;
+	padding: 2em 0 6em 0;
 }
 
 
