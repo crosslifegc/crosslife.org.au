@@ -237,6 +237,8 @@ p.subscribe_link a { padding: 0 5px; }
 		header { background: transparent url('../images/header_bg_768.jpg') no-repeat top center; }
 		header #welcome { margin-top: 8em; margin-bottom: 0; }
 		header #mission-statement { background: transparent url('../images/mission_statement_bg_768.png') no-repeat top center; }
+
+		div.staff-member img { float: none !important; }
 	}
 
 	/* All Mobile Sizes (devices and browser) */
@@ -246,7 +248,10 @@ p.subscribe_link a { padding: 0 5px; }
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+		div.staff-member { margin-bottom: 1em !important; }
+		div.location { margin-bottom: 3em !important; }
+	}
 
 
 
