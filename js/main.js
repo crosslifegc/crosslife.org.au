@@ -16,6 +16,12 @@ $(window).load(function() {
                 });
             }
         }
+
+        // scroll to top of cta's
+        var theId = "call-to-action";
+        var theScrollTop = ($(theId).offset().top) - 10;
+        $('html,body').animate({ scrollTop: theScrollTop }, 'normal');
+
         return false;
     });
    
