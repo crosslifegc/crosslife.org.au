@@ -235,6 +235,7 @@ p.subscribe_link a { padding: 0 5px; }
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 		header { background: transparent url('../images/header_bg_768.jpg') no-repeat top center; }
+		header #welcome { margin-top: 8em; margin-bottom: 0; }
 		header #mission-statement { background: transparent url('../images/mission_statement_bg_768.png') no-repeat top center; }
 	}
 
