@@ -15,6 +15,9 @@ $(window).load(function() {
                     $("div#call-to-action-detail div" + selected).fadeIn();
                 });
             }
+
+            // set the currently selected item.
+            $("div#call-to-action-detail").attr('data-selected-cta', selected.replace("#", ""));
         }
 
         // scroll to top of cta's
