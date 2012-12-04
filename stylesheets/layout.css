@@ -263,6 +263,13 @@ p.subscribe_link a { padding: 0 5px; }
 		div.staff-member { margin-bottom: 1em !important; }
 		div.location { margin-bottom: 3em !important; }
 
+
+		ul#recent-sermons {}
+		ul#recent-sermons li.sermon-thumb { height: auto; overflow: hidden; margin-bottom: 1em; }
+		ul#recent-sermons li.sermon-thumb .sermon-image { width: 30% !important; float: left; margin-right: 1em; }
+
+		p.subscribe_link { float: none; }
+
 		footer p.contact-info { text-align: left; }
 	}
 

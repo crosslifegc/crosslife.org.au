@@ -135,14 +135,14 @@
         .container .column { margin: 0; }
 
 
-        .container.mobile-two-column { width: 308px;}
-        .container.mobile-two-column .columns,
-        .container.mobile-two-column .column { margin-left: 4px; margin-right: 4px; margin-bottom: 8px;  }
-        .container.mobile-two-column .column.alpha, 
-        .container.mobile-two-column.columns.alpha { margin-left: 0; margin-right: 4px; }
-        .container.mobile-two-column .column.omega, 
-        .container.mobile-two-column .columns.omega { margin-right: 0; margin-left: 4px; }
-        .container.mobile-two-column .alpha.omega { margin-left: 0; margin-right: 0; }
+        .mobile-two-column { width: 308px;}
+        .mobile-two-column .columns,
+        .mobile-two-column .column { margin-left: 4px; margin-right: 4px; margin-bottom: 8px;  }
+        .mobile-two-column .column.alpha, 
+        .mobile-two-column .columns.alpha { margin-left: 0; margin-right: 4px; }
+        .mobile-two-column .column.omega, 
+        .mobile-two-column .columns.omega { margin-right: 0; margin-left: 4px; }
+        .mobile-two-column .alpha.omega { margin-left: 0; margin-right: 0; }
 
         .container .one.column,
         .container .one.columns,
@@ -164,22 +164,22 @@
         .container .one-third.column,
         .container .two-thirds.column  { width: 300px; }
 
-        .container.mobile-two-column .one.column,
-        .container.mobile-two-column .one.columns,
-        .container.mobile-two-column .two.columns,
-        .container.mobile-two-column .three.columns,
-        .container.mobile-two-column .four.columns,
-        .container.mobile-two-column .five.columns,
-        .container.mobile-two-column .six.columns,
-        .container.mobile-two-column .seven.columns,
-        .container.mobile-two-column .eight.columns { width: 146px; }
-        .container.mobile-two-column .nine.columns,
-        .container.mobile-two-column .ten.columns,
-        .container.mobile-two-column .eleven.columns,
-        .container.mobile-two-column .thirteen.columns,
-        .container.mobile-two-column .fourteen.columns,
-        .container.mobile-two-column .fifteen.columns,
-        .container.mobile-two-column .sixteen.columns { width: 300px; }
+        .mobile-two-column .one.column,
+        .mobile-two-column .one.columns,
+        .mobile-two-column .two.columns,
+        .mobile-two-column .three.columns,
+        .mobile-two-column .four.columns,
+        .mobile-two-column .five.columns,
+        .mobile-two-column .six.columns,
+        .mobile-two-column .seven.columns,
+        .mobile-two-column .eight.columns { width: 146px; }
+        .mobile-two-column .nine.columns,
+        .mobile-two-column .ten.columns,
+        .mobile-two-column .eleven.columns,
+        .mobile-two-column .thirteen.columns,
+        .mobile-two-column .fourteen.columns,
+        .mobile-two-column .fifteen.columns,
+        .mobile-two-column .sixteen.columns { width: 300px; }
 
         /* Offsets */
         .container .offset-by-one,
@@ -213,13 +213,14 @@
 
 
         .container.mobile-two-column { width: 440px;}
-        .container.mobile-two-column .columns,
-        .container.mobile-two-column .column { margin-left: 5px; margin-right: 5px; margin-bottom: 10px;  }
-        .container.mobile-two-column .column.alpha, 
-        .container.mobile-two-column.columns.alpha { margin-left: 0; margin-right: 5px; }
-        .container.mobile-two-column .column.omega, 
-        .container.mobile-two-column .columns.omega { margin-right: 0; margin-left: 5px; }
-        .container.mobile-two-column .alpha.omega { margin-left: 0; margin-right: 0; }
+        .container .mobile-two-column { width: 420px;}
+        .mobile-two-column .columns,
+        .mobile-two-column .column { margin-left: 5px; margin-right: 5px; margin-bottom: 10px;  }
+        .mobile-two-column .column.alpha, 
+        .mobile-two-column .columns.alpha { margin-left: 0; margin-right: 5px; }
+        .mobile-two-column .column.omega, 
+        .mobile-two-column .columns.omega { margin-right: 0; margin-left: 5px; }
+        .mobile-two-column .alpha.omega { margin-left: 0; margin-right: 0; }
 
 
         .container .one.column,
@@ -243,22 +244,22 @@
         .container .two-thirds.column { width: 420px; }
 
 
-        .container.mobile-two-column .one.column,
-        .container.mobile-two-column .one.columns,
-        .container.mobile-two-column .two.columns,
-        .container.mobile-two-column .three.columns,
-        .container.mobile-two-column .four.columns,
-        .container.mobile-two-column .five.columns,
-        .container.mobile-two-column .six.columns,
-        .container.mobile-two-column .seven.columns,
-        .container.mobile-two-column .eight.columns { width: 210px; }
-        .container.mobile-two-column .nine.columns,
-        .container.mobile-two-column .ten.columns,
-        .container.mobile-two-column .eleven.columns,
-        .container.mobile-two-column .thirteen.columns,
-        .container.mobile-two-column .fourteen.columns,
-        .container.mobile-two-column .fifteen.columns,
-        .container.mobile-two-column .sixteen.columns { width: 420px; }
+        .mobile-two-column .one.column,
+        .mobile-two-column .one.columns,
+        .mobile-two-column .two.columns,
+        .mobile-two-column .three.columns,
+        .mobile-two-column .four.columns,
+        .mobile-two-column .five.columns,
+        .mobile-two-column .six.columns,
+        .mobile-two-column .seven.columns,
+        .mobile-two-column .eight.columns { width: 210px; }
+        .mobile-two-column .nine.columns,
+        .mobile-two-column .ten.columns,
+        .mobile-two-column .eleven.columns,
+        .mobile-two-column .thirteen.columns,
+        .mobile-two-column .fourteen.columns,
+        .mobile-two-column .fifteen.columns,
+        .mobile-two-column .sixteen.columns { width: 420px; }
     }
 
 
