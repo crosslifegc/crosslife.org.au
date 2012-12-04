@@ -242,15 +242,36 @@ p.subscribe_link a { padding: 0 5px; }
 	}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+		header { background: transparent url('../images/header_bg_420.jpg') no-repeat top center; padding-top: 2em; }
+		
+		header #branding-contact .columns:first-child { display: none; }
+
+		header #branding-contact p.contact-info { text-align: right; font-size: 0.9em; }
+		header #branding-contact nav { display: none; }
+
+		header #welcome { margin: 10em 0 0 0 !important; font-size: 0.9em; }
+		header #welcome h2 { margin: 0; }
+		header #welcome h4 { margin: 1.2em 0 0 0; }
+		header #welcome * { color: #FFF; }
+
+		header #mission-statement { background: none; margin: 0; font-size: 0.9em; padding-top: 1em; border-top: 1px solid #FFF; }
+		header #mission-statement div.mission-statement-content { padding: 1em 0 1em 0; border-bottom: 1px solid rgba(255,255,255,0.25); }
+		header #mission-statement .column:last-child div.mission-statement-content { border-bottom: none; }
+		header #mission-statement h4 strong { display: inline;  }
+
+		div.staff-member { margin-bottom: 1em !important; }
+		div.location { margin-bottom: 3em !important; }
+
+		footer p.contact-info { text-align: left; }
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		div.staff-member { margin-bottom: 1em !important; }
-		div.location { margin-bottom: 3em !important; }
+		header { background: transparent url('../images/header_bg_300.jpg') no-repeat top center; padding-top: 2em; }
 	}
 
 
