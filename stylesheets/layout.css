@@ -197,7 +197,6 @@ div#call-to-action a { display: block; padding: 4px; background-color: #EBEAE6; 
 div#call-to-action a img { max-width: 100%; display: block; }
 
 div#call-to-action-detail { display: none; background-color: #E9E9E9; }
-div#call-to-action-detail[data-selected-cta='christmas-at-crosslife'] { background: #E9E9E9 url('../images/cta/xmas_bg.jpg') no-repeat top left; }
 div#call-to-action-detail[data-selected-cta='community-node'] { background: #E9E9E9 url('../images/cta/node_bg.jpg') no-repeat top center; }
 div#call-to-action-detail h2 { margin-bottom: 0.5em; }
 div#call-to-action-detail div.container { position: relative; }
