@@ -137,9 +137,10 @@ div.divider hr {
 /* header & footer */
 header { 
 	background: #54BADC url('../images/xl_header.jpg') no-repeat top center;
-	height: 30.833333333em; /* 370px */
+	height: 35em; /* 420px */
 	color: #FFF;
 }
+
 header nav#main_nav { 
 	/*background: transparent url('../images/nav_black_bg.png'); */
 	background: rgba(0,0,0,0.3);
@@ -149,6 +150,9 @@ header nav#main_nav {
 	left: 0; 
 	width: 100%; 
 }
+
+header a#show-navigation { display: none; }
+
 header nav#main_nav.dark { background: rgba(0,0,0,0.7); }
 header nav#main_nav ul { overflow: hidden; height: auto; }
 header nav#main_nav ul li { line-height: 3em; float: left; color: #CCC; font-size: 1.0833333333em; margin-bottom: 0; margin-right: 1em; font-weight: 600; }
@@ -202,7 +206,7 @@ footer a { color: inherit; }
 /* #Page Styles
 ================================================== */
 
-div#featured_content { background-color: #F9F9F9; margin-top: -9.1666666667em; padding-top: 0.8333333333em; }
+div#featured_content { background-color: #F9F9F9; margin-top: -6.6666666667em; padding-top: 0.8333333333em; }
 div#featured_content #featured_image { margin-bottom: 1em; }
 div#featured_content #featured_image img { display: block; }
 
@@ -252,6 +256,9 @@ p.subscribe_link { float: right; background: #FFF; padding: 5px 10px; border: 1p
 p.subscribe_link img, p.subscribe_link a { display: inline; vertical-align: middle; }
 p.subscribe_link a { padding: 0 5px; }
 
+
+
+
 /* #Media Queries
 ================================================== */
 
@@ -262,18 +269,108 @@ p.subscribe_link a { padding: 0 5px; }
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		header { background: transparent url('../images/header_bg_768.jpg') no-repeat top center; }
+		header { background-size: auto 30.909090909em; height: 30.909090909em; }
+		/*header { background: transparent url('../images/header_bg_768.jpg') no-repeat top center; }
 		header #welcome { margin-top: 8em; margin-bottom: 0; }
 		header #mission-statement { background: transparent url('../images/mission_statement_bg_768.png') no-repeat top center; }
 
-		div.staff-member img { float: none !important; }
+		div.staff-member img { float: none !important; }*/
 	}
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-		header { background: transparent url('../images/header_bg_420.jpg') no-repeat top center; padding-top: 2em; }
+		header { 
+/*			background: transparent url('../images/header_bg_420.jpg') no-repeat bottom center; */
+			background-size: auto 200px;
+			background-position: bottom center;
+			height: 200px; 
+			position: relative; 
+		}
+		header nav { display: none; }
+		header nav #mobile_nav { display: block; }
 		
-		header #branding-contact .columns:first-child { display: none; }
+		header a#show-navigation { 
+			display: block; 
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			margin: 0; 
+			/*background: transparent url('../images/mobile_menu.png') no-repeat top left; */
+			/*width: 100px; 
+			height: 40px; */
+			padding: 0.75em 1em;
+			font-size: 0.9em;
+		}
+		header nav ul { display: none; }
+
+
+
+		#jPanelMenu-menu { background:#3b3b3b }
+    #jPanelMenu-menu ul { border-bottom:1px solid #484848 }
+    #jPanelMenu-menu li { margin-bottom: 0; }
+    #jPanelMenu-menu li a {
+	    display: block;
+	    background: linear-gradient(#3E3E3E, #383838);
+	    border-top: 1px solid #484848;
+	    border-bottom: 1px solid #2E2E2E;
+	    padding: 15px;
+	    text-decoration:none;
+	    text-transform: uppercase;
+	    font-weight: 600;
+	    color: #8A8A8A;
+  	}
+    #jPanelMenu-menu li a:hover, 
+    #jPanelMenu-menu li a:hover {
+    	background: linear-gradient(#484848, #383838);
+    	color: #FAFAFA;
+    }
+	  #jPanelMenu-menu li:after {
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    height: 100%;
+	    width: 34px;
+	    background: linear-gradient(left, rgba(black, 0), rgba(black, 0.4));
+	  }
+
+	  /*
+    #jPanelMenu-menu li a:hover,
+    #jPanelMenu-menu li a:focus {
+    	background:#404040;
+    	background:-o-linear-gradient(top, #484848, #383838);
+    	background:-ms-linear-gradient(top, #484848, #383838);
+    	background:-moz-linear-gradient(top, #484848, #383838);
+    	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #484848), color-stop(1, #383838));
+    	background:-webkit-linear-gradient(#484848, #383838);
+    	background:linear-gradient(top, #484848, #383838)
+    }
+    #jPanelMenu-menu li a:active {
+    	background:#363636;
+    	background:-o-linear-gradient(top, #3e3e3e, #2e2e2e);
+    	background:-ms-linear-gradient(top, #3e3e3e, #2e2e2e);
+    	background:-moz-linear-gradient(top, #3e3e3e, #2e2e2e);
+    	background:-webkit-gradient(linear, left top, left bottom, color-stop(0, #3e3e3e), color-stop(1, #2e2e2e));
+    	background:-webkit-linear-gradient(#3e3e3e, #2e2e2e);
+    	background:linear-gradient(top, #3e3e3e, #2e2e2e);
+    	-moz-box-shadow:0 2px 7px #222 inset;
+    	-webkit-box-shadow:0 2px 7px #222 inset;
+    	box-shadow:0 2px 7px #222 inset;
+    	border-top-color:#222;
+    	padding-top:0.55em;
+    	padding-bottom:0.45em
+    }
+    */
+    .jPanelMenu-panel{-moz-box-shadow:0 0 25px #222;-webkit-box-shadow:0 0 25px #222;box-shadow:0 0 25px #222}
+
+
+    #jPanelMenu-menu li.contact_details { display: none; }
+
+		
+		#featured_content { margin-top: -5em !important; padding: 0 !important; }
+		#featured_content #featured_image a { padding: 1em; display: block;}
+
+		/*header #branding-contact .columns:first-child { display: none; }
 
 		header #branding-contact p.contact-info { text-align: right; font-size: 0.9em; }
 		header #branding-contact nav { display: none; }
@@ -288,7 +385,7 @@ p.subscribe_link a { padding: 0 5px; }
 		header #mission-statement .column:last-child div.mission-statement-content { border-bottom: none; }
 		header #mission-statement h4 strong { display: inline;  }
 
-		div.staff-member { margin-bottom: 1em !important; }
+		div.staff-member { margin-bottom: 1em !important; }*/
 		div.location { margin-bottom: 3em !important; }
 
 /*
@@ -296,14 +393,14 @@ p.subscribe_link a { padding: 0 5px; }
 		div#recent-sermons div.sermon-thumb { height: auto; overflow: hidden; margin-bottom: 1em; }
 		div#recent-sermons div.sermon-thumb .sermon-image { width: 40% !important; float: left; margin-right: 1em; }
 */
-		#recent-sermons .four.columns {
+		/*#recent-sermons .four.columns {
 			margin-left: 0;
 			margin-right: 0;
 		}
 		
 		.bordered-image { margin-bottom: 1em; }
 
-		p.subscribe_link { float: none; }
+		p.subscribe_link { float: none; }*/
 
 		footer p.contact-info { text-align: left; }
 	}
@@ -313,7 +410,9 @@ p.subscribe_link a { padding: 0 5px; }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		header { background: transparent url('../images/header_bg_300.jpg') no-repeat top center; padding-top: 2em; }
+		/*header { background: transparent url('../images/header_bg_300.jpg') no-repeat top center; padding-top: 2em; }*/
+		header { background-size: auto 140px; height: 140px; }
+		#featured_content { margin-top: -3em !important; }
 	}
 
 

@@ -50,4 +50,41 @@ $(window).load(function() {
         }
     });
 
+    // setup the mobile menu
+    setupMobileMenu();
+
 });
+
+// setup the mobile menu to display at appropriate mobile sizes
+function setupMobileMenu()
+{
+  // setup the jpanel menu
+  var jPM = $.jPanelMenu({
+    menu: 'header nav',
+    direction: 'right'
+  });
+
+  // create the jrespond breakpoints
+  var jRes = jRespond([
+    {
+      label: 'small',
+      enter: 0,
+      exit: 767
+    },{
+      label: 'large',
+      enter: 768,
+      exit: 10000
+    }
+  ]);
+
+  // bind the jrespond functionality
+  jRes.addFunc({
+    breakpoint: 'small',
+    enter: function() {
+      jPM.on(); // turn on the jrespond menu when ready
+    },
+    exit: function() {
+      jPM.off();
+    }
+  });
+}
